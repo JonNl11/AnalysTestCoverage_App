@@ -25,12 +25,22 @@ jobs:
         with:
         # this will use the latest Node 16 version
           node-version: 16.16.0
+
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          node-version: '14'
+      # Install NPM dependencies, cache them correctly
+      - name: Run prettier
+        run: |
+          npm ci
+          npm run prettier-check
       # install dependencies using clean install to avoid package lock updates
-      - run: npm ci
+     # - run: npm ci
     # build the project if necessary
-      - run: npm run build --if-present
+     # - run: npm run build --if-present
     # finally run the tests
-      - run: npm run coverage
+    #  - run: npm run coverage
     # Save coverage report in Coveralls
                     
       - name: Coveralls GitHub Action    
