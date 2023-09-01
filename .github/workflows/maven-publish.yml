@@ -32,3 +32,12 @@ jobs:
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
+    - name: Coveralls GitHub Action
+
+
+              
+      uses: coverallsapp/github-action@v2
+
+
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
