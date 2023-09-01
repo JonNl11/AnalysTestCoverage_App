@@ -15,19 +15,6 @@ jobs:
     steps:
     # this will check out the current branch (https://github.com/actions/checkout#Push-a-commit-using-the-built-in-token)
     - uses: actions/checkout@v3
-    # installing Node
-    - name: Use Node.js 16.16.0
-      uses: actions/setup-node@v3
-      with:
-        # this will use the latest Node 16 version
-        node-version: 16.16.0
-    # install dependencies using clean install to avoid package lock updates
-    - run: npm ci
-    # build the project if necessary
-    - run: npm run build --if-present
-    # finally run the tests
-    - run: npm run coverage
-
     # Save coverage report in Coveralls
     - name: Coveralls
       uses: coverallsapp/github-action@master
