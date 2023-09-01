@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analystestcoverage_app.DetailledOne_Controller">
+   <children>
+      <Button fx:id="Back" layoutX="27.0" layoutY="360.0" mnemonicParsing="false" onAction="#Back" text="Back" AnchorPane.bottomAnchor="14.666666666666668" AnchorPane.leftAnchor="27.0" />
+      <Text fx:id="textprincipal" layoutX="213.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Text" textAlignment="CENTER" wrappingWidth="209.4700927734375" AnchorPane.leftAnchor="213.0" AnchorPane.rightAnchor="177.5299072265625" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="22.0" />
+         </font></Text>
+      <Button fx:id="linecharts" disable="true" layoutX="446.0" layoutY="231.0" mnemonicParsing="false" onAction="#lineCharts" prefHeight="33.0" prefWidth="95.0" text="LineChart" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="231.0" />
+      <Button fx:id="scatter" disable="true" layoutX="446.0" layoutY="293.0" mnemonicParsing="false" onAction="#scattercharts" prefHeight="33.0" prefWidth="95.0" text="ScatterChart" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="293.0" />
+      <Button fx:id="Extractcsv" disable="true" layoutX="197.0" layoutY="360.0" mnemonicParsing="false" onAction="#extractcsv" text="Extract_csv" AnchorPane.bottomAnchor="14.666666666666668" AnchorPane.leftAnchor="197.0" />
+      <Button fx:id="extractJson" disable="true" layoutX="310.0" layoutY="360.0" mnemonicParsing="false" onAction="#Extractjson" text="Extract_json" AnchorPane.bottomAnchor="14.666666666666668" AnchorPane.leftAnchor="310.0" />
+      <Button fx:id="extract_txt" disable="true" layoutX="442.0" layoutY="360.0" mnemonicParsing="false" onAction="#extracttxt" text="Extract_txt" AnchorPane.bottomAnchor="14.666666666666668" AnchorPane.leftAnchor="442.0" />
+      <Button fx:id="load" layoutX="91.0" layoutY="360.0" mnemonicParsing="false" onAction="#load" text="Load/Stop" AnchorPane.bottomAnchor="14.666666666666686" AnchorPane.leftAnchor="91.0" />
+      <ProgressBar fx:id="progressbar" layoutX="27.0" layoutY="339.0" prefHeight="18.0" prefWidth="445.0" progress="1.0" visible="false" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="27.0" />
+      <Text layoutX="27.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project infos:" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="42.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tabview" layoutX="21.0" layoutY="71.0" prefHeight="266.0" prefWidth="453.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="71.0">
+        <columns>
+          <TableColumn fx:id="Branche" prefWidth="75.0" text="Branch" />
+          <TableColumn fx:id="committer" prefWidth="75.0" text="Committer" />
+            <TableColumn fx:id="nbr_offiles" prefWidth="75.0" text="Nbr of files" />
+            <TableColumn fx:id="coveredlines" prefWidth="75.0" text="Covered lines" />
+            <TableColumn fx:id="totlines" prefWidth="75.0" text="Total lines " />
+            <TableColumn fx:id="percentage" prefWidth="75.0" text="Percentage" />
+        </columns>
+      </TableView>
+      <Label fx:id="labdetail" layoutX="491.0" layoutY="92.0" prefHeight="29.0" prefWidth="95.0" text="Nbr" AnchorPane.rightAnchor="13.666666666666671" AnchorPane.topAnchor="92.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="490.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Elements:" wrappingWidth="85.224609375" AnchorPane.rightAnchor="24.775390625" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

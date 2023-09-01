@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analystestcoverage_app.Detailled_linescharts_Controller">
+   <children>
+      <LineChart fx:id="linecharts" layoutX="4.0" layoutY="6.0" prefHeight="364.0" prefWidth="581.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="6.0">
+        <xAxis>
+          <CategoryAxis fx:id="Builds_Number" label="Build_Number" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="pourcentage" label="Percentage_of_coverage" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="save" layoutX="536.0" layoutY="370.0" mnemonicParsing="false" onAction="#save" text="Save" AnchorPane.bottomAnchor="4.666666666666686" AnchorPane.rightAnchor="23.33333333333337" />
+      <Label fx:id="labdetail" layoutX="14.0" layoutY="151.0" prefHeight="241.0" prefWidth="238.0" text="Point " visible="false" />
+   </children>
+</AnchorPane>

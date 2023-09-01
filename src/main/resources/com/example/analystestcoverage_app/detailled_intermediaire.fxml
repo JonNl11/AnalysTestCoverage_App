@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ank" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analystestcoverage_app.Detailled_Intermediaire_controller">
+   <children>
+      <Text fx:id="tiltle" layoutX="6.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Line Chart Configuration" textAlignment="CENTER" wrappingWidth="588.8033752441406" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="5.196624755859375" AnchorPane.topAnchor="7.41796875">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="363.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose metrics : " AnchorPane.rightAnchor="119.515625" AnchorPane.topAnchor="105.734375">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="linecharts" layoutX="478.0" layoutY="336.0" mnemonicParsing="false" onAction="#linecharts" text="LineCharts" AnchorPane.bottomAnchor="38.666666666666686" AnchorPane.rightAnchor="50.66666666666663" />
+      <ComboBox fx:id="combobox1" layoutX="56.0" layoutY="158.0" prefWidth="150.0" promptText="Which branch?" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="158.0" />
+      <Text layoutX="63.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose branch :" wrappingWidth="136.80340576171875" AnchorPane.leftAnchor="63.0" AnchorPane.topAnchor="106.8134765625">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here you can configure the parameters of the line chart and choose the branch to follow. By default, builds are sorted by build number.You must also choose the metric in y." wrappingWidth="212.0" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="25.0" />
+      <Text layoutX="352.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X : " AnchorPane.rightAnchor="225.82958984375" AnchorPane.topAnchor="157.8134765625">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+        <CheckBox fx:id="checklocalref" layoutX="480.0" layoutY="162.0" mnemonicParsing="false" onAction="#localrefff" text="Local ref" AnchorPane.rightAnchor="52.66666666666667" AnchorPane.topAnchor="162.0" />
+      <Text layoutX="351.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y:" AnchorPane.rightAnchor="235.8310546875" AnchorPane.topAnchor="210.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="percentage" layoutX="388.0" layoutY="212.0" mnemonicParsing="false" onAction="#percentee" text="Percentage" AnchorPane.rightAnchor="130.66666666666669" AnchorPane.topAnchor="212.0" />
+      <CheckBox fx:id="coveredlines" layoutX="492.0" layoutY="246.0" mnemonicParsing="false" onAction="#covererrlines" text="Covered lines" AnchorPane.rightAnchor="14.666666666666629" AnchorPane.topAnchor="246.0" />
+      <CheckBox fx:id="total_lines" layoutX="388.0" layoutY="280.0" mnemonicParsing="false" onAction="#totolines" text="Total lines" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="280.0" />
+      <CheckBox fx:id="numberfiles" layoutX="492.0" layoutY="297.0" mnemonicParsing="false" onAction="#fn" text="File Number" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="297.0" />
+      <CheckBox fx:id="checkdate" layoutX="390.0" layoutY="162.0" mnemonicParsing="false" onAction="#selectdate" text="checkdate" AnchorPane.rightAnchor="134.0" AnchorPane.topAnchor="162.0" />
+      <Text fx:id="warningtext" layoutX="33.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning." visible="false" wrappingWidth="345.642578125" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="33.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

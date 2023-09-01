@@ -1,0 +1,16 @@
+Branche ,Date, Committer, #Files ,Cov Lines ,Tot lines ,Percentage ,Url ,Local ref
+master ,Tue Nov 24 00:00:00 CET 2015, jskora, 478 ,9752 ,10951 ,89.05 ,https://coveralls.io/builds/13545015 ,19
+master ,Thu Dec 03 00:00:00 CET 2015, apiri, 8 ,651 ,655 ,99.39 ,https://coveralls.io/builds/13748325 ,91
+master ,Thu Feb 11 00:00:00 CET 2016, joewitt, 741 ,6230 ,8318 ,74.9 ,https://coveralls.io/builds/15312135 ,575
+NIFI-2032 ,Fri Jun 17 00:00:00 CEST 2016, web-flow, 12 ,143 ,254 ,56.3 ,https://coveralls.io/builds/18349904 ,1989
+0.x ,Thu Oct 06 00:00:00 CEST 2016, trixpan, 300 ,7879 ,18903 ,41.68 ,https://coveralls.io/builds/20666406 ,3969
+nifi-2585 ,Wed Dec 21 00:00:00 CET 2016, web-flow, 44 ,106 ,114 ,92.98 ,https://coveralls.io/builds/22252015 ,4727
+master ,Thu Jan 19 00:00:00 CET 2017, bbende, 51 ,577 ,627 ,92.03 ,https://coveralls.io/builds/22856134 ,4945
+NIFI-1921 ,Mon Jun 12 00:00:00 CEST 2017, web-flow, 222 ,986 ,1215 ,81.15 ,https://coveralls.io/builds/26117915 ,6570
+master ,Sun Jul 30 00:00:00 CEST 2017, jvwing, 6 ,304 ,368 ,82.61 ,https://coveralls.io/builds/27155673 ,6976
+NIFI-3484 ,Mon Aug 14 00:00:00 CEST 2017, web-flow, 36 ,449 ,488 ,92.01 ,https://coveralls.io/builds/27467941 ,7078
+NIFI-4436 ,Tue Oct 24 00:00:00 CEST 2017, web-flow, 83 ,1491 ,1615 ,92.32 ,https://coveralls.io/builds/29024868 ,7522
+NIFI-2169 ,Fri Dec 15 00:00:00 CET 2017, web-flow, 4 ,14 ,75 ,18.67 ,https://coveralls.io/builds/29928238 ,7844
+NIFI-5278 ,Fri Jun 08 00:00:00 CEST 2018, web-flow, 515 ,17510 ,46512 ,37.65 ,https://coveralls.io/builds/33665467 ,9391
+NIFI-3738 ,Fri Aug 16 00:00:00 CEST 2019, Andy LoPresto, 376 ,10158 ,26696 ,38.05 ,https://coveralls.io/builds/25168805 ,5910
+NIFI-2162 ,Thu Jan 09 00:00:00 CET 2020, Joe Percivall, 17 ,48 ,268 ,17.91 ,https://coveralls.io/builds/28019168 ,7225

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analystestcoverage_app.Global_First_Step_Controller">
+   <children>
+      <ListView fx:id="lview" layoutX="393.0" layoutY="40.0" prefHeight="243.0" prefWidth="200.0" />
+      <Button fx:id="three" layoutX="472.0" layoutY="335.0" mnemonicParsing="false" onAction="#Going_next" prefHeight="25.0" prefWidth="91.0" text="Next " />
+      <Button fx:id="one" layoutX="110.0" layoutY="229.0" mnemonicParsing="false" onAction="#Enter" text="Enter" />
+      <TextField fx:id="textfield" layoutX="22.0" layoutY="187.0" prefHeight="25.0" prefWidth="253.0" />
+      <Text layoutX="22.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can enter a project set as a csv file." wrappingWidth="285.4700622558594" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="86.0" />
+      <Text layoutX="11.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Maximum 5 files allowed.)" wrappingWidth="220.80340576171875" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="260.0" />
+      <Text layoutX="21.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter text path and press Enter." wrappingWidth="200.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="162.0" />
+      <Text layoutX="22.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Global Analysis" wrappingWidth="253.33333333333337" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="12.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Text>
+      <Button fx:id="two" layoutX="393.0" layoutY="295.0" mnemonicParsing="false" onAction="#Clear_listView" prefHeight="25.0" prefWidth="77.0" text="Clear" />
+      <Button fx:id="back" layoutX="42.0" layoutY="335.0" mnemonicParsing="false" onAction="#Going_back" prefHeight="25.0" prefWidth="91.0" text="Back" />
+      <Text fx:id="text_warning" layoutX="11.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attention : L'Entrée ne respecte pas le format." visible="false" wrappingWidth="220.80340576171875" />
+      <Text fx:id="entreevide" layoutX="22.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L'Entrée ne peut pas etre vide." visible="false" wrappingWidth="220.80340576171875" />
+      <Text fx:id="introuvable" layoutX="185.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fichier introuvable." visible="false" wrappingWidth="150.13671875" />
+      <Text fx:id="maximum_warning" layoutX="185.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum atteint." visible="false" wrappingWidth="150.13671875" />
+      <Button fx:id="fives" layoutX="493.0" layoutY="295.0" mnemonicParsing="false" onAction="#removefromlist" prefHeight="25.0" prefWidth="77.0" text="Remove" />
+      <Text fx:id="notfound" layoutX="174.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Not Found " visible="false" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="174.0" />
+      <Text layoutX="393.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of project units" wrappingWidth="200.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can extract them from: https://seart-ghs.si.usi.ch/" wrappingWidth="220.80340576171875" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="113.0" />
+      <Button fx:id="browse" layoutX="216.0" layoutY="229.0" mnemonicParsing="false" onAction="#browser" text="Browse" />
+   </children>
+</AnchorPane>

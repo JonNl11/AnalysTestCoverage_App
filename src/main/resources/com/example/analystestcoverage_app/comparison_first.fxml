@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analystestcoverage_app.ComparisonFirst_Controller">
+   <children>
+      <ListView fx:id="listview" layoutX="381.0" layoutY="64.0" prefHeight="97.0" prefWidth="200.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="64.0" />
+      <Text layoutX="381.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projects to compare" textAlignment="CENTER" wrappingWidth="200.00000000000023" AnchorPane.rightAnchor="18.999999999999773" AnchorPane.topAnchor="37.0" />
+      <Button fx:id="clear" layoutX="399.0" layoutY="187.0" mnemonicParsing="false" onAction="#clear" text="Clear" AnchorPane.rightAnchor="157.66666666666666" AnchorPane.topAnchor="187.0" />
+      <Button fx:id="remove" layoutX="490.0" layoutY="187.0" mnemonicParsing="false" onAction="#remove" text="Remove" AnchorPane.rightAnchor="50.66666666666663" AnchorPane.topAnchor="187.0" />
+      <Text layoutX="9.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project comparison" textAlignment="CENTER" wrappingWidth="382.1367492675781" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="7.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="texttext" layoutX="103.0" layoutY="149.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="149.0" />
+      <Text layoutX="9.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project name:" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="153.0" />
+      <Button fx:id="entrer" layoutX="172.0" layoutY="187.0" mnemonicParsing="false" onAction="#entrer" text="Enter" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="187.0" />
+      <Button fx:id="Next" layoutX="490.0" layoutY="342.0" mnemonicParsing="false" onAction="#next" text="Next" AnchorPane.bottomAnchor="32.666666666666686" AnchorPane.rightAnchor="68.66666666666663" />
+      <Text fx:id="warning" layoutX="50.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning message." visible="false" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="50.0" />
+      <Text layoutX="380.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning : maximum 2 projets." AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="295.05078125" />
+      <Text layoutX="43.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here the maximum number of projects allowed is limited to two.By entering these two project names, you can open a comparative page." wrappingWidth="280.35546875" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="71.0" />
+      <Button fx:id="back" layoutX="50.0" layoutY="342.0" mnemonicParsing="false" onAction="#back" text="Back" AnchorPane.bottomAnchor="32.66666666666667" AnchorPane.leftAnchor="50.0" />
+   </children>
+</AnchorPane>

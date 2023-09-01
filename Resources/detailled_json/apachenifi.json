@@ -1,0 +1,167 @@
+{"Builds": [
+    {
+        "Cov_lines": 9752,
+        "Tot_lines": 10951,
+        "Percentage": 89.05,
+        "Url ": "https://coveralls.io/builds/13545015",
+        "Committer": "jskora",
+        "Branche": "master",
+        "Nbr_Files": 478,
+        "Date": "Tue Nov 24 00:00:00 CET 2015",
+        "Local_ref": "19"
+    },
+    {
+        "Cov_lines": 651,
+        "Tot_lines": 655,
+        "Percentage": 99.39,
+        "Url ": "https://coveralls.io/builds/13748325",
+        "Committer": "apiri",
+        "Branche": "master",
+        "Nbr_Files": 8,
+        "Date": "Thu Dec 03 00:00:00 CET 2015",
+        "Local_ref": "91"
+    },
+    {
+        "Cov_lines": 6230,
+        "Tot_lines": 8318,
+        "Percentage": 74.9,
+        "Url ": "https://coveralls.io/builds/15312135",
+        "Committer": "joewitt",
+        "Branche": "master",
+        "Nbr_Files": 741,
+        "Date": "Thu Feb 11 00:00:00 CET 2016",
+        "Local_ref": "575"
+    },
+    {
+        "Cov_lines": 143,
+        "Tot_lines": 254,
+        "Percentage": 56.3,
+        "Url ": "https://coveralls.io/builds/18349904",
+        "Committer": "web-flow",
+        "Branche": "NIFI-2032",
+        "Nbr_Files": 12,
+        "Date": "Fri Jun 17 00:00:00 CEST 2016",
+        "Local_ref": "1989"
+    },
+    {
+        "Cov_lines": 7879,
+        "Tot_lines": 18903,
+        "Percentage": 41.68,
+        "Url ": "https://coveralls.io/builds/20666406",
+        "Committer": "trixpan",
+        "Branche": "0.x",
+        "Nbr_Files": 300,
+        "Date": "Thu Oct 06 00:00:00 CEST 2016",
+        "Local_ref": "3969"
+    },
+    {
+        "Cov_lines": 106,
+        "Tot_lines": 114,
+        "Percentage": 92.98,
+        "Url ": "https://coveralls.io/builds/22252015",
+        "Committer": "web-flow",
+        "Branche": "nifi-2585",
+        "Nbr_Files": 44,
+        "Date": "Wed Dec 21 00:00:00 CET 2016",
+        "Local_ref": "4727"
+    },
+    {
+        "Cov_lines": 577,
+        "Tot_lines": 627,
+        "Percentage": 92.03,
+        "Url ": "https://coveralls.io/builds/22856134",
+        "Committer": "bbende",
+        "Branche": "master",
+        "Nbr_Files": 51,
+        "Date": "Thu Jan 19 00:00:00 CET 2017",
+        "Local_ref": "4945"
+    },
+    {
+        "Cov_lines": 986,
+        "Tot_lines": 1215,
+        "Percentage": 81.15,
+        "Url ": "https://coveralls.io/builds/26117915",
+        "Committer": "web-flow",
+        "Branche": "NIFI-1921",
+        "Nbr_Files": 222,
+        "Date": "Mon Jun 12 00:00:00 CEST 2017",
+        "Local_ref": "6570"
+    },
+    {
+        "Cov_lines": 304,
+        "Tot_lines": 368,
+        "Percentage": 82.61,
+        "Url ": "https://coveralls.io/builds/27155673",
+        "Committer": "jvwing",
+        "Branche": "master",
+        "Nbr_Files": 6,
+        "Date": "Sun Jul 30 00:00:00 CEST 2017",
+        "Local_ref": "6976"
+    },
+    {
+        "Cov_lines": 449,
+        "Tot_lines": 488,
+        "Percentage": 92.01,
+        "Url ": "https://coveralls.io/builds/27467941",
+        "Committer": "web-flow",
+        "Branche": "NIFI-3484",
+        "Nbr_Files": 36,
+        "Date": "Mon Aug 14 00:00:00 CEST 2017",
+        "Local_ref": "7078"
+    },
+    {
+        "Cov_lines": 1491,
+        "Tot_lines": 1615,
+        "Percentage": 92.32,
+        "Url ": "https://coveralls.io/builds/29024868",
+        "Committer": "web-flow",
+        "Branche": "NIFI-4436",
+        "Nbr_Files": 83,
+        "Date": "Tue Oct 24 00:00:00 CEST 2017",
+        "Local_ref": "7522"
+    },
+    {
+        "Cov_lines": 14,
+        "Tot_lines": 75,
+        "Percentage": 18.67,
+        "Url ": "https://coveralls.io/builds/29928238",
+        "Committer": "web-flow",
+        "Branche": "NIFI-2169",
+        "Nbr_Files": 4,
+        "Date": "Fri Dec 15 00:00:00 CET 2017",
+        "Local_ref": "7844"
+    },
+    {
+        "Cov_lines": 17510,
+        "Tot_lines": 46512,
+        "Percentage": 37.65,
+        "Url ": "https://coveralls.io/builds/33665467",
+        "Committer": "web-flow",
+        "Branche": "NIFI-5278",
+        "Nbr_Files": 515,
+        "Date": "Fri Jun 08 00:00:00 CEST 2018",
+        "Local_ref": "9391"
+    },
+    {
+        "Cov_lines": 10158,
+        "Tot_lines": 26696,
+        "Percentage": 38.05,
+        "Url ": "https://coveralls.io/builds/25168805",
+        "Committer": "Andy LoPresto",
+        "Branche": "NIFI-3738",
+        "Nbr_Files": 376,
+        "Date": "Fri Aug 16 00:00:00 CEST 2019",
+        "Local_ref": "5910"
+    },
+    {
+        "Cov_lines": 48,
+        "Tot_lines": 268,
+        "Percentage": 17.91,
+        "Url ": "https://coveralls.io/builds/28019168",
+        "Committer": "Joe Percivall",
+        "Branche": "NIFI-2162",
+        "Nbr_Files": 17,
+        "Date": "Thu Jan 09 00:00:00 CET 2020",
+        "Local_ref": "7225"
+    }
+]}

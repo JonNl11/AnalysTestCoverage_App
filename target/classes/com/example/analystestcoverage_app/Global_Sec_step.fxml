@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.analystestcoverage_app.Global_Sec_step">
+   <children>
+      <Button fx:id="BarCharts" alignment="CENTER" layoutX="461.0" layoutY="344.0" mnemonicParsing="false" onAction="#Goestobarcharts" prefHeight="33.0" prefWidth="133.0" text="BarCharts Global" AnchorPane.bottomAnchor="22.666666666666664" AnchorPane.rightAnchor="5.666666666666657" />
+      <Button fx:id="Back" layoutX="32.0" layoutY="348.0" mnemonicParsing="false" onAction="#Goes_back" prefHeight="25.0" prefWidth="89.0" text="Back" AnchorPane.bottomAnchor="26.666666666666668" AnchorPane.leftAnchor="32.0" />
+      <Text layoutX="3.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Files details" wrappingWidth="267.4739074707031" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="1.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <TabPane layoutY="42.0" prefHeight="297.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="60.666666666666686" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0">
+        <tabs>
+          <Tab fx:id="tab1" disable="true" text="First File">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="piech1" layoutX="3.0" layoutY="5.0" prefHeight="254.0" prefWidth="362.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                        <ListView fx:id="lv1" layoutX="377.0" layoutY="30.0" prefHeight="88.0" prefWidth="200.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="30.0" />
+                        <Button fx:id="detailled1" layoutX="365.0" layoutY="228.0" mnemonicParsing="false" onAction="#Detailled1" text="Detailled" visible="false" AnchorPane.bottomAnchor="14.666666666666668" AnchorPane.rightAnchor="171.66666666666666" />
+                        <Button fx:id="Extract1" layoutX="511.0" layoutY="228.0" mnemonicParsing="false" onAction="#Extract1" text="Extract" visible="false" AnchorPane.bottomAnchor="14.666666666666657" AnchorPane.rightAnchor="25.66666666666663" />
+                        <Button fx:id="charge1" layoutX="365.0" layoutY="168.0" mnemonicParsing="false" onAction="#charge1" text="Load" AnchorPane.bottomAnchor="74.66666666666667" AnchorPane.rightAnchor="181.0" />
+                        <Text fx:id="chargingdata" layoutX="431.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press Charge and wait! " wrappingWidth="133.33333333333348" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="35.666666666666515">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="377.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of covered project(s) :" textAlignment="CENTER" wrappingWidth="199.4700927734375" AnchorPane.rightAnchor="23.5299072265625" AnchorPane.topAnchor="6.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <ProgressBar fx:id="progress1" layoutX="377.0" layoutY="124.0" prefWidth="200.0" visible="false" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="124.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab2" disable="true" text="Second File">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="piechar2" layoutX="13.0" layoutY="4.0" prefHeight="260.0" prefWidth="345.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                        <ListView fx:id="lv2" layoutX="365.0" layoutY="23.0" prefHeight="103.0" prefWidth="200.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="29.0" />
+                        <Button fx:id="detailled2" layoutX="347.0" layoutY="230.0" mnemonicParsing="false" onAction="#detailled2" text="Detailled" visible="false" AnchorPane.bottomAnchor="12.666666666666668" AnchorPane.rightAnchor="189.66666666666666" />
+                        <Button fx:id="Extract2" layoutX="501.0" layoutY="230.0" mnemonicParsing="false" onAction="#Extract2" text="Extract" visible="false" AnchorPane.bottomAnchor="12.666666666666657" AnchorPane.rightAnchor="35.66666666666663" />
+                        <Button fx:id="charge2" layoutX="347.0" layoutY="178.0" mnemonicParsing="false" onAction="#charge2" text="Load" AnchorPane.bottomAnchor="64.66666666666667" AnchorPane.rightAnchor="199.0" />
+                        <Text fx:id="chargingdata1" layoutX="427.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press Charge and wait!" wrappingWidth="133.33333333333348" AnchorPane.bottomAnchor="68.984375" AnchorPane.rightAnchor="39.666666666666515">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="365.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of covered project :" textAlignment="CENTER" wrappingWidth="203.47003173828125" AnchorPane.rightAnchor="31.52996826171875" AnchorPane.topAnchor="5.0" />
+                        <ProgressBar fx:id="progressbar2" layoutX="366.0" layoutY="138.0" prefWidth="200.0" visible="false" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="138.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tab3" disable="true" text="Third File">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="piechart3" layoutX="11.0" layoutY="2.0" prefHeight="261.0" prefWidth="347.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                        <ListView fx:id="lv3" layoutX="375.0" layoutY="32.0" prefHeight="103.0" prefWidth="200.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="29.0" />
+                        <Button fx:id="detailled3" layoutX="356.0" layoutY="221.0" mnemonicParsing="false" onAction="#detailled3" text="Detailled" visible="false" AnchorPane.bottomAnchor="21.666666666666668" AnchorPane.rightAnchor="180.66666666666666" />
+                        <Button fx:id="Extract3" layoutX="485.0" layoutY="221.0" mnemonicParsing="false" onAction="#Extract3" prefHeight="25.0" prefWidth="89.0" text="Extract" visible="false" AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="26.0" />
+                        <Button fx:id="charge3" layoutX="356.0" layoutY="177.0" mnemonicParsing="false" onAction="#charge3" text="Load" AnchorPane.bottomAnchor="65.66666666666667" AnchorPane.rightAnchor="190.0" />
+                        <Text fx:id="chargingdata11" layoutX="434.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press Charge and wait!" wrappingWidth="133.33333333333348" AnchorPane.bottomAnchor="67.984375" AnchorPane.rightAnchor="32.666666666666515">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="367.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of covered project :" textAlignment="CENTER" wrappingWidth="195.469970703125" AnchorPane.rightAnchor="37.530029296875" AnchorPane.topAnchor="5.05078125" />
+                        <ProgressBar fx:id="progressbar3" layoutX="365.0" layoutY="139.0" prefWidth="200.0" visible="false" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="139.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tab4" disable="true" text="Fourth File">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="piechar4" layoutX="8.0" layoutY="3.0" prefHeight="260.0" prefWidth="369.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                        <ListView fx:id="lv4" layoutX="372.0" layoutY="29.0" prefHeight="103.0" prefWidth="200.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="29.0" />
+                        <Button fx:id="detailled4" layoutX="372.0" layoutY="222.0" mnemonicParsing="false" onAction="#detailled4" prefHeight="25.0" prefWidth="63.0" text="Detailled" visible="false" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="165.0" />
+                        <Button fx:id="extract4" layoutX="513.0" layoutY="222.0" mnemonicParsing="false" onAction="#extract4" text="Extract" visible="false" AnchorPane.bottomAnchor="20.666666666666657" AnchorPane.rightAnchor="35.0" />
+                        <Button fx:id="charge4" layoutX="372.0" layoutY="177.0" mnemonicParsing="false" onAction="#charge4" text="Load" AnchorPane.bottomAnchor="65.66666666666667" AnchorPane.rightAnchor="174.0" />
+                        <Text fx:id="chargedata5" layoutX="462.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press Charge and wait!" wrappingWidth="101.560546875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="373.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of covered project :" textAlignment="CENTER" wrappingWidth="197.4700927734375" AnchorPane.rightAnchor="29.5299072265625" AnchorPane.topAnchor="5.0" />
+                        <ProgressBar fx:id="progressbar4" layoutX="372.0" layoutY="141.0" prefWidth="200.0" visible="false" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="141.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tab5" disable="true" text="Fifth File">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="piechart5" layoutX="7.0" layoutY="5.0" prefHeight="258.0" prefWidth="363.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0" />
+                        <ListView fx:id="lv5" layoutX="374.0" layoutY="53.0" prefHeight="103.0" prefWidth="200.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="29.0" />
+                        <Button fx:id="detailled5" layoutX="372.0" layoutY="229.0" mnemonicParsing="false" onAction="#Detailled5" text="Detailled" visible="false" AnchorPane.bottomAnchor="13.666666666666668" AnchorPane.rightAnchor="164.66666666666666" />
+                        <Button fx:id="extract5" layoutX="501.0" layoutY="229.0" mnemonicParsing="false" onAction="#Extract5" text="Extract" visible="false" AnchorPane.bottomAnchor="13.666666666666657" AnchorPane.rightAnchor="35.66666666666663" />
+                        <Button fx:id="charge5" layoutX="372.0" layoutY="191.0" mnemonicParsing="false" onAction="#charge5" text="Load" AnchorPane.bottomAnchor="51.66666666666667" AnchorPane.rightAnchor="174.0" />
+                        <Text fx:id="chargingdata5" layoutX="449.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press Charge and wait!" wrappingWidth="103.16082763671875" AnchorPane.bottomAnchor="55.984375" AnchorPane.rightAnchor="47.83917236328125">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="367.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Covered project : " textAlignment="CENTER" wrappingWidth="196.13671875" AnchorPane.rightAnchor="36.86328125" AnchorPane.topAnchor="5.0" />
+                        <ProgressBar fx:id="progress5" layoutX="365.0" layoutY="142.0" prefWidth="200.0" visible="false" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="142.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
