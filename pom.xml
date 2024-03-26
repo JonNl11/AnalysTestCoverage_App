@@ -127,15 +127,6 @@
                             <noHeaderFiles>true</noHeaderFiles>
                         </configuration>
                     </execution>
-                    <execution>
-                        <id>npm install</id>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>ci</arguments>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
         </plugins>
